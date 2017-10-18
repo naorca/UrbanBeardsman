@@ -166,9 +166,9 @@ header nav a, header nav li {
 .fa-long-arrow-right {
     position: fixed;
     color: black;
-    top: 46%;
-    left: 70%;
-    opacity: 0.6;
+    top: 55%;
+    left: 50%;
+    
     
 }
 
@@ -828,10 +828,6 @@ footer li:hover {
     height: 100px;
 }
 
-.fa-long-arrow-right {
-   left: 80%;
-
-}
 
 .shop {
     height: 200px;
@@ -911,6 +907,7 @@ header nav ul {
     height: 0;
     overflow: hidden;
 }
+
 header nav ul.open {
     flex-direction: column;
     height: auto;
@@ -918,6 +915,7 @@ header nav ul.open {
     background-color: #E8E8E8;
     width: 100vw;
     text-align: center;
+    transition: all ease 0.3;
     
 }
 
@@ -927,9 +925,32 @@ header nav ul.open {
 }
 
 
+.search input {
+    font-size: 20px;
+}
+
+.fa-long-arrow-right {
+    top: 50%;
+    left: 52%;
+    
+ 
+ }
+
 .footer ul {
-    width: 100%;
+    width: 100vw;
+    margin: auto;
+
+}
+
+.footer li {
+   
+    width: 90vw;
     text-align: center;
+}
+
+.support-open {
+    bottom: 78%;
+    left: 10%;
 }
 }
 

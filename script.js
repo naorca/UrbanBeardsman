@@ -112,6 +112,5 @@ $(function () {
 
 $(".burger-btn").click(function(){
     $(".burger-nav").toggleClass("open");
-    
 
 });
