@@ -223,12 +223,18 @@ header nav a, header nav li {
 
 
 
-
-
-.shop img:hover ~ h3, {
+.shop img:hover ~ h3 {
      color: #CA886E;
+     cursor: pointer;
+     
     
 }
+
+.shop img:hover {
+    cursor: pointer;
+}
+
+
 
 .shop:hover, {
     cursor: pointer;
