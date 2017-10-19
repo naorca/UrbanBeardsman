@@ -948,9 +948,8 @@ header nav ul.open {
     text-align: center;
 }
 
-.support-open {
-    bottom: 78%;
-    left: 10%;
+.support-btn {
+    display: none;
 }
 }
 
