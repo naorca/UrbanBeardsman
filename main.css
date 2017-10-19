@@ -636,7 +636,6 @@ footer li:hover {
     padding-left: 35px;
     padding-right: 35px;
     color: black;
-    font-size: 14px;
     margin: 0;
     height: 80px;
     font-weight: 100;
@@ -644,8 +643,12 @@ footer li:hover {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    
  
+    
+}
+
+.copyright h4 {
+    font-weight: lighter;
 }
 
 .support-btn {
@@ -726,15 +729,33 @@ footer li:hover {
         margin-top: 20px;
     }
      
-    .facts li {
-        padding: 15px;
+    .facts {
+        
+        width: 97%;
         flex-wrap: wrap;
+    }
+
+    .facts li {
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+       
         
     }    
 
-    .facts li h2{
-        text-align: center;
+    .facts li img {
+        margin: 0;
+        padding: 0;
     }
+
+    .facts li h2 {
+        justify-content: center;
+        margin: auto;
+    }
+
+
 
 
     .press-h2 {
@@ -925,6 +946,38 @@ header nav ul.open {
 }
 
 
+
+
+.facts li {
+
+    width: 60%;  
+    margin: auto;
+    justify-content: space-around;
+    
+
+    
+}    
+
+
+.facts li h2 {
+    width: 50%;
+    margin: 0;
+  
+    
+}
+
+.facts li img {
+    width: 16%;
+}
+
+
+.instagram-box {
+    width: 50%;
+    height: auto;
+
+}
+
+
 .search input {
     font-size: 20px;
 }
@@ -950,6 +1003,17 @@ header nav ul.open {
 
 .support-btn {
     display: none;
+}
+
+.copyright h4 {
+    font-size: 10px;
+   
+   
+}
+
+.copyright {
+    align-items: center;
+
 }
 }
 
