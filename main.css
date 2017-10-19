@@ -98,7 +98,6 @@ header nav a, header nav li {
 
 
 
-
 .search {
     position: fixed;
     top: 0px;
@@ -106,6 +105,8 @@ header nav a, header nav li {
     width: 100%;
     height: 100%;
     background-color: #E8E8E8;
+    display: flex;
+ 
     
     -webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
@@ -120,7 +121,7 @@ header nav a, header nav li {
 	transform: translate(0px, -100%) scale(0, 0);
     
     opacity: 0;
-}
+} 
 
 .search.open {
     -webkit-transform: translate(0px, 0px) scale(1, 1);
@@ -845,7 +846,7 @@ footer li:hover {
 .header {
     flex-wrap: wrap;
     background-color: white;
-    z-index: 11;
+    z-index: 4;
     height: 100px;
 }
 
@@ -978,16 +979,7 @@ header nav ul.open {
 }
 
 
-.search input {
-    font-size: 20px;
-}
 
-.fa-long-arrow-right {
-    top: 50%;
-    left: 52%;
-    
- 
- }
 
 .footer ul {
     width: 100vw;
