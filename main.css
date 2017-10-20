@@ -965,7 +965,9 @@ header nav ul.open {
 }
 
 
-
+.shop {
+    visibility: hidden;
+}
 
 .facts li {
 
