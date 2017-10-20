@@ -812,6 +812,10 @@ footer li:hover {
     .footer-icons-mobile:hover {
         cursor: pointer;
     }
+
+    .support-btn {
+        font-size: 14px;
+    }
 }
 
 
@@ -845,6 +849,10 @@ footer li:hover {
     .facts li {
         width: 40%;
      
+    }
+
+    .support-btn {
+        display: none;
     }
 
   
