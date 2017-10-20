@@ -96,6 +96,17 @@ header nav a, header nav li {
 }
 
 
+.burger-nav li {
+    display: flex;
+    align-items: center;
+   
+   
+}
+
+.burger-nav li i {
+    padding-right: 6px;
+}
+
 
 
 .search {
@@ -936,8 +947,7 @@ header nav ul.open {
     padding: 10px;
     background-color: #E8E8E8;
     width: 100vw;
-    text-align: center;
-    transition: all ease 0.3;
+    align-items: center;
     
 }
 
