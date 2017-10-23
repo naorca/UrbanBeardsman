@@ -2,15 +2,6 @@ document.addEventListener("DOMContentLoaded", () => console.log("DOM fully loade
 
 $("body").paroller();
 
-// $(window).scroll(function(){
-//     var wScroll = $(this).scrollTop();
-    
-//     $('.main-banner').css({
-//         'transform' : 'translate(0px, '+ wScroll /110 +'%)'
-//     });
-// });
-
-
 
 $(".shop-button").click(function() {
     const mybox = $("#shop-box");
