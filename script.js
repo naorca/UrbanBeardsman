@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => console.log("DOM fully loaded and parsed"));
 
-$(window).scroll(function(){
-    var wScroll = $(this).scrollTop();
+$("body").paroller();
+
+// $(window).scroll(function(){
+//     var wScroll = $(this).scrollTop();
     
-    $('.main-banner').css({
-        'transform' : 'translate(0px, '+ wScroll /110 +'%)'
-    });
-});
+//     $('.main-banner').css({
+//         'transform' : 'translate(0px, '+ wScroll /110 +'%)'
+//     });
+// });
 
 
 
