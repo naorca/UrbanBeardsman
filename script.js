@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => console.log("DOM fully loaded and parsed"));
+$(document).ready(function(){ 
 
 $("body").paroller();
 
@@ -107,3 +107,4 @@ $(".burger-btn").click(function(){
     $(".burger-nav").toggleClass("open");
 
 });
+ });

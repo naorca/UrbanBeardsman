@@ -1,5 +1,7 @@
 * {
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
     
 }
 
@@ -615,6 +617,7 @@ footer li {
     margin: 20px 0;
     font-size: 14px;
     line-height: 1.6em;
+   
     
 }
 
@@ -623,24 +626,27 @@ footer li:hover {
      cursor: pointer;
 }
 
-.footer-icons {
-    display: flex;
-    
-}
+
 
 .footer-icons li {
     text-align: center;
-    width: 15%;
     color: black;
+    width: 30%;
+    
+   
+
 }
 
-.footer-icons i {
-    padding: 5px;
+.footer-icons h5 {
+    text-align: center;
 }
 
-.footer-icons i:hover {
+
+
+.footer-icons li:hover {
      color: #CA886E;
 }
+
 
 
 .copyright {
@@ -809,8 +815,9 @@ footer li:hover {
         margin: auto;
     }
 
-    .footer-icons-mobile:hover {
+    .footer-icons-mobile li:hover {
         cursor: pointer;
+        color: #CA886E;
     }
 
     .support-btn {
