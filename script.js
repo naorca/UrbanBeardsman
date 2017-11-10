@@ -21,14 +21,27 @@ let panelMap = {
     "collection-button" : collectionBox,
     "blog-button" : soonBox,
     "about-button" : soonBox
-}
-
+};
 
 burgerNav.click(function(e){
     let btn = e.target;
     // console.log(btn.className);
     shopClick($(panelMap[btn.className]), $(btn));
-})
+});
+
+
+
+$(document).click(function(event) { 
+    if(!$(event.target).closest(burgerNav).length) {
+        if($(burgerNav).is(":visible")) {
+            currentPanel.removeClass("shop");
+            currentPanel.addClass("hidden");
+            currentPanel.css("display", "none");
+            currentBtn.removeClass("picked");
+        }
+    }        
+});
+
 
 
 $("#support-btn").click(function(){
@@ -37,7 +50,7 @@ $("#support-btn").click(function(){
     $("#support-box").slideDown();
   
 
-})
+});
 
 
 
