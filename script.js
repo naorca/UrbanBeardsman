@@ -25,7 +25,6 @@ let panelMap = {
 
 burgerNav.click(function(e){
     let btn = e.target;
-    // console.log(btn.className);
     shopClick($(panelMap[btn.className]), $(btn));
 });
 
@@ -33,12 +32,10 @@ burgerNav.click(function(e){
 
 $(document).click(function(event) { 
     if(!$(event.target).closest(burgerNav).length) {
-        if($(burgerNav).is(":visible")) {
             currentPanel.removeClass("shop");
             currentPanel.addClass("hidden");
             currentPanel.css("display", "none");
             currentBtn.removeClass("picked");
-        }
     }        
 });
 
