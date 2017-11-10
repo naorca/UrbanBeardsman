@@ -203,6 +203,7 @@ header nav a, header nav li {
     justify-content: center;
     z-index: 1;
     margin: auto;
+    border-bottom: 1px solid #ca886E;
  
 
 }

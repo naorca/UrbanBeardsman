@@ -2,28 +2,33 @@ $(document).ready(function(){
 
 $("body").paroller();
 
+const burgerNav = $(".burger-nav")
+const shopBox = $("#shop-box");
+const collectionBox = $("#collection-box");
+const shopBtn = $(".shop-button");
+const collectionBtn = $(".collection-button");
+const blogBtn = $(".blog-button");
+const aboutBtn = $(".about-button");
+const soonBox = $("#soon-box");
 
-$(".shop-button").click(function() {
-    const mybox = $("#shop-box");
-    const otherbox = $("#collection-box");
-    const mybutton = $(".shop-button")
-    const otherbutton = $(".collection-button")
-    shopClick(mybox, otherbox, mybutton, otherbutton);
-    
- }
 
-);
 
-$(".collection-button").click(function() {
-    const mybox = $("#collection-box");
-    const otherbox = $("#shop-box");
-    const mybutton = $(".collection-button")
-    const otherbutton = $(".shop-button")
-    shopClick(mybox, otherbox, mybutton, otherbutton);
+let currentPanel = null;
+let currentBtn = null;
+
+let panelMap = {
+    "shop-button" : shopBox,
+    "collection-button" : collectionBox,
+    "blog-button" : soonBox,
+    "about-button" : soonBox
 }
 
-);
 
+burgerNav.click(function(e){
+    let btn = e.target;
+    console.log(btn.className);
+    shopClick($(panelMap[btn.className]), $(btn));
+})
 
 
 $("#support-btn").click(function(){
@@ -55,13 +60,17 @@ $("#support-search").click(function(){
 
 
 
-function shopClick(mybox, otherbox, mybutton, otherbutton) {
-    otherbox.removeClass("shop");
-    otherbox.addClass("hidden");
-    otherbox.css("display", "none")
-    otherbutton.removeClass("picked")
-  
+function shopClick(mybox, mybutton) {
 
+    if (currentPanel) {
+        currentPanel.removeClass("shop");
+        currentPanel.addClass("hidden");
+        currentPanel.css("display", "none")
+    }
+
+    if (currentBtn) {
+        currentBtn.removeClass("picked")
+    }
     if (mybox.hasClass("hidden")) {
 
     mybox.removeClass("hidden")
@@ -78,6 +87,9 @@ function shopClick(mybox, otherbox, mybutton, otherbutton) {
        mybox.css("display", "none")
        mybutton.removeClass("picked")
 }
+
+   currentPanel = mybox;
+   currentBtn = mybutton;
 };
 
 
