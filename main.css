@@ -31,7 +31,7 @@ h4 {
     align-items: center;
     background-color: white;
     border-bottom: 1px solid #ca886E;
-    z-index: 1;
+    z-index: 10;
 
 }
 
@@ -201,7 +201,7 @@ header nav a, header nav li {
     list-style-type: none;
     width: 100%;
     justify-content: center;
-    z-index: 1;
+    z-index: 11;
     margin: auto;
     border-bottom: 1px solid #ca886E;
  
@@ -274,7 +274,6 @@ header nav a, header nav li {
 .slogan {
     
     position: absolute;
-    z-index: 3;
     top: 727px;
     color: white;
     padding-left: 50px;
@@ -873,7 +872,6 @@ footer li:hover {
 .header {
     flex-wrap: wrap;
     background-color: white;
-    z-index: 4;
     height: 100px;
 }
 
@@ -984,10 +982,9 @@ header nav ul.open {
     display: none;
 }
 
-
-.shop {
+ .shop {
     visibility: hidden;
-}
+} 
 
 .facts li {
 

@@ -26,7 +26,7 @@ let panelMap = {
 
 burgerNav.click(function(e){
     let btn = e.target;
-    console.log(btn.className);
+    // console.log(btn.className);
     shopClick($(panelMap[btn.className]), $(btn));
 })
 
