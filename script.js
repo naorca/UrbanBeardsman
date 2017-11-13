@@ -32,10 +32,12 @@ burgerNav.click(function(e){
 
 $(document).click(function(event) { 
     if(!$(event.target).closest(burgerNav).length) {
+        if(currentPanel) {
             currentPanel.removeClass("shop");
             currentPanel.addClass("hidden");
             currentPanel.css("display", "none");
             currentBtn.removeClass("picked");
+        }
     }        
 });
 
