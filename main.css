@@ -1141,6 +1141,14 @@ header nav ul.open {
     display: none;
 }
 
+.shop {
+    top: 100px;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+
+}
+
 
 
 
