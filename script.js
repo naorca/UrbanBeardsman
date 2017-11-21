@@ -11,10 +11,11 @@ const blogBtn = $(".blog-button");
 const aboutBtn = $(".about-button");
 const soonBox = $("#soon-box");
 
-
-
 let currentPanel = null;
 let currentBtn = null;
+
+
+
 
 let panelMap = {
     "shop-button" : shopBox,
@@ -31,7 +32,12 @@ burgerNav.click(function(e){
 
 
 $(document).click(function(event) { 
-    if(!$(event.target).closest(burgerNav).length) {
+    if(!$(event.target).closest(burgerNav).length && 
+    !$(event.target).closest(shopBox).length &&
+    !$(event.target).closest(collectionBox).length)
+    
+    {
+
         if(currentPanel) {
             currentPanel.removeClass("shop");
             currentPanel.addClass("hidden");
@@ -67,6 +73,12 @@ $("#support-search").click(function(){
 
 
 });
+
+
+
+
+
+
 
 
 
