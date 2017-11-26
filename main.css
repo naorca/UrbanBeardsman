@@ -308,7 +308,7 @@ header nav a, header nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease-in-out;
     width: 25vw;
     height: 12vw;
    
